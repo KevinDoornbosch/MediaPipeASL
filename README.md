@@ -8,5 +8,5 @@
 4. Run MediaPipeASL: ```python3 app.py```
 
 
-Credit to cesarealmendarez for DeepASL which this is based from:
+Credit to cesarealmendarez for DeepASL which this is based off of:
 https://github.com/cesarealmendarez/DeepASL
