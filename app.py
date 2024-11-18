@@ -234,13 +234,7 @@ while video_capture:
     analytics_frame = cv2.flip(analytics_frame, 1)
 
     cv2.putText(analytics_frame, "Hit Q to QUIT!", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 98, 255), 2, cv2.LINE_AA)
-    #cv2.putText(analytics_frame, "hand_in_frame: {}".format(str(hand_in_frame)), (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
     cv2.putText(analytics_frame, "hand_position_eval: {}".format(hand_position_eval), (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-    #cv2.putText(analytics_frame, "anchor_distances_avg: {}".format(float(anchor_distances_avg)), (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-    #cv2.putText(analytics_frame, "hand_centroid_velocity: {}".format(hand_centroid_velocity), (10, 140), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-    #cv2.putText(analytics_frame, "net_testing: {}".format(net_testing), (10, 170), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-    #cv2.putText(analytics_frame, "net_output_translation: {}".format(net_output_translation), (10, 200), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
-    #cv2.putText(analytics_frame, "net_output_translation_confidence: {}".format(net_output_translation_confidence), (10, 230), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (0, 255, 0), 2, cv2.LINE_AA)
     cv2.putText(analytics_frame, "{}".format(net_output_translation), (10, 400), cv2.FONT_HERSHEY_SIMPLEX, 10, (0, 0, 255), 5, cv2.LINE_AA)
 
     cv2.imshow("Analytics", analytics_frame)
